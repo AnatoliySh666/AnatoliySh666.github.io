@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма регистрации</title>
+</head>
+<body>
+
+<form method="post">
+
+  <h2>Регистрация</h2>
+
+  <!-- Email -->
+  <label for="email">E-mail:</label><br>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Введите ваш e-mail" 
+    required
+  ><br><br>
+
+  <!-- Пароль -->
+  <label for="password">Пароль:</label><br>
+  <input 
+    type="password" 
+    id="password" 
+    name="password" 
+    placeholder="Введите пароль" 
+    required
+  ><br><br>
+
+  <!-- Пол -->
+  <p>Пол:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Мужской</label><br>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Женский</label><br><br>
+
+  <!-- Языки -->
+  <p>Язык:</p>
+  <input type="checkbox" id="ru" name="language" value="ru" checked disabled>
+  <label for="ru">Русский</label><br>
+
+  <input type="checkbox" id="en" name="language" value="en">
+  <label for="en">Английский</label><br><br>
+
+  <!-- О себе -->
+  <label for="about">О себе:</label><br>
+  <textarea 
+    id="about" 
+    name="about" 
+    placeholder="Расскажите немного о себе"
+  ></textarea><br><br>
+
+  <!-- Кнопка -->
+  <button type="submit">Зарегистрироваться</button>
+
+</form>
+
+</body>
+</html>
