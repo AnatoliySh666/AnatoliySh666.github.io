@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Кодировка документа -->
+  <meta charset="utf-8">
+  <!-- Заголовок страницы -->
+  <title>Маркетинг в социальных сетях для бизнеса | Bussines.ru</title>
+  <!-- Подключения таблицы стилей Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Подключение темы со стилями Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <!-- Подключение таблицы стилей иконок Awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Подключение скриптов Bootstrap 3 -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Основное содержимое страницы -->
+
+ <!-- Основной контейнер -->
+<div class="container">
+    <!-- "Шапка" сайта -->
+    <header style="padding-top:5px;">
+        <div id="logo" style="float:left">
+            <img src="images/logo.jpg" width="75" height="75" alt="Логотип сайта">
+        </div>
+        <div id="contacts" style="float:right">
+            <!--Элемент i служит для вывода иконки Awesome с именем fa-mobile -->
+            <i class="fa fa-mobile fa-lg"></i> +7-666-11-26 |
+            <i class="fa fa-envelope fa-lg"></i> pochta.contact@somemail.ru
+            <!--CSS свойство margin-left задает отступ 10px слева от предыдущего элемента-->
+            <!--CSS свойство color задает цвет элементу i-->
+            <!-- <i class="fa fa-facebook-square fa-2x" style="margin-left:10px; color: blue;"></i> -->
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-menu">
+            <ul class="nav navbar-nav">
+                <!-- Активный пункт меню "Главная" -->
+                <li class="active"><a href="#">Главная</a></li>
+                <!-- Пункт меню "О компании" -->
+                <li><a href="#main">О компании</a></li>
+                <!-- Пункт меню "Наш метод" -->
+                <li><a href="#method">Наши методы</a></li>
+                <!-- Пункт меню "Наши проекты" -->
+                <li><a href="#work">Наши проекты</a></li>
+            </ul>
+            <!-- Список, выровненный по правому краю -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Пункт меню "Бесплатная консультация" -->
+                <li><a  href="#" style="padding-top:8px; padding-bottom:8px;">
+                    <span class="btn btn-danger"><strong>Бесплатная консультация</strong></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Нижняя часть "шапки" сайта -->
+    <div id="header-bottom" style="position:relative;">
+        <img src="images/banner.webp" style="width:100%;" alt="Баннер">
+            <!--Положение элемента зададим свойством top от верхнего края со значением 10% от высоты элемента header-bottom.-->
+        <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;" >
+        <!-- Здесь будет текст с кнопкой ...-->
+            <div class="hidden-xs">
+                <h1>ИГРА ГОДА<br>
+                    <small style="color: white;">Как стала игра популярна?</small>
+                </h1>
+             </div>
+             <div class="hidden-sm hidden-md hidden-lg">
+                <p class="lead">Мы предлагаем маркетинг в социальных сетях для бизнеса</p>
+            </div>
+             <!-- Кнопка "Бесплатная консультация" -->
+            <a class="btn btn-danger btn-lg">ВОТ ТАК</a>
+        </div>
+    </div>
+    <!-- Блок об услугах компании -->  
+
+    <div id="main">
+        <!-- Задаем новый ряд, с выравниванием текста внутри него по центру с помощью CSS свойства text-align -->
+        <div class="row" style="text-align:center;">
+            <!-- Создаём заголовок h2 с текстом "О компании" -->
+            <h2>Всякое</h2>
+            <!-- Создаем более крупный размер шрифта по сравнению с остальным текстом с помощью класса Bootstrap 3 "lead" -->
+            <p class="lead">Разнобразные допы</p>
+            <!-- Создаем горизонтальную линию -->
+            <hr>
+            <!-- Создаем блок, состоящий из 4 колонок Bootstrap 3 -->
+            <div class="col-md-4">
+                <!-- Отображаем изображение img-1.png -->
+                <img src="images/orudie.png" width="120" height="120" alt="Лого ВК">
+                <!-- Создаём заголовок внутри колонки -->
+                <h3>Скины</h3>
+                <!-- Абзац с текстом -->
+                <p>В КС2 Есть разнообразие видов всяких скинов,от дешевых до дорогих,от жирпотреба до наикрутейших и изумительных. Не тлько на оружиео и на ожи с перчатками</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/chat.png" width="120" height="120" alt="Картинка листочка">
+                <h3>Общение</h3>
+                <p>Это прекрасная функция при помощи которой можно разговаривать по голосовому чату со своими союзниками,а по письменному чату можно будет разговаривать с противоположной командой
+                    . Это прекрасная функция позволяет говорить на сколько сильно вы любите не только своих родных но и своих друзей.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/сломленная-клавиатура-11690536-no-bg-preview (carve.photos).png" width="120" height="120" alt="Картинка рекламы">
+                <h3>Положительные эмоции</h3>
+                <p>За прекрасной игрой могут умерать не только противники,но и ваши предметы.
+                    Зато вы будете понимать,что на сегодня игра закончена. Т.е разработали с заботай о вас!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="method">
+        <!-- Создание ряда, с выравниванием текста внутри блока по центру и заполнением фона цветом #f3f3f3 -->
+        <div class="row" style="text-align:center; background:#f3f3f3;">
+            <!-- Создание заголовка h2 -->
+            <h2>Режимы игры</h2>
+            <!-- Создание текста под заголовком -->
+            <p class="lead">Режимы игры добавленные в игру</p>
+            <!-- Создание горизонтальной линии -->
+            <hr>
+            <!-- Создание 1 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+                background: #FFF; border-radius: 3px; display: flow-root;">
+                <!-- display: flow-root автоматически очищает внутренние float элементы -->
+            
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/zombie.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>1 режим : Zombie</h3>
+                    <p>Этот режим позволяет расслабить и поубиватьзомбиков после скучной учебы.
+                        При зомби аппокалипсисе вы будее знать, что зомби это -вайб.
+                    </p>
+                </li>
+            </ul>
+            <!-- Создание 2 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/parkur.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>2 режим : Паркур4ик</h3>
+                    <p>В этом режиме можно научиться бэхописть чтобы быстрее двигаться и жить в кайфики</p>
+                </li>
+            </ul>
+            <!-- Создание 3 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/mm.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>3 режим : Матчмейкинг </h3>
+                    <p>Это кассический режим 5 на 5. Игра против спецназа и террористов. Нужно выиграть 13 раундов или завершить игру на счете 12 12.</p>
+                </li>
+            </ul>
+            <!-- Создание 4 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/napar.webp" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>4 режим : Напарники</h3>
+                    <p>Игра если вы социофоб то тут можете сыграть 2 на 2. Ну или же если у вас мало времени, но получиь дефомин хочется,то отличное место чтоб получить поожитльные эмоции</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="work">
+        <!-- Создание ряда, с выравниванием текста внутри блока .row по центру и заполнением фона цветом #f35e59 -->
+        <div class="row" style="text-align:center; background:#f35e59; color:#fff;">
+            <!-- Создание заголовка 2 уровня -->
+            <h2>Карты</h2>
+            <!-- Создание дополнительного текста под заголовком -->
+            <p class="lead">Популярные карты</p>
+            <!-- Создание горизонтальной полосы -->
+            <hr>
+                <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                    <!-- Создание элемента с позиционированием по левому краю, шириной блока 20% от ширины родительского элемента и минимальной шириной 100px -->
+                    <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                        <!-- Создание внутри левого блока заголовка 3 уровня -->
+                        <h3>Dust II</h3>
+                    </li>
+                    <!-- Создание элемента с позиционированием по левому краю относительно предыдущего элемента, шириной элемента 75% от ширины родительского элемента и отступом слева от предыдущего элемента равным 1em -->
+                    <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                        <!-- Отображение изображения w1.png -->
+                        <img src="images/Dust_II_(CS-GO).jpg" width="450" class="img-responsive" alt="очередная картинка с примером">
+                    </li>
+                    <!-- Блок для очистки потока и правильного отображения последующих блоков -->
+                </ul>
+                    <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                        <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                            <h3>Mirage</h3>
+                        </li>
+                        <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                            <img src="images/mirage_cc4e12458a.avif" width="450" class="img-responsive" alt="очередная картинка с примером">
+                        </li>
+                    </ul>
+                        <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                            <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                                <h3>Inferno</h3>
+                            </li>
+                            <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                                <img src="images/Inferno_(CSGO).png" width="450" class="img-responsive" alt="очередная картинка с примером">
+                            </li>
+                        </ul>
+        </div>
+    </div>
+</div>
+<!-- Подвал сайта -->
+<footer>
+    <!-- Текст внутри блока выровнен по правому краю. Цвет фона блока #2a2a2a, значения полей от блока до его содержимого равно 1em, цвет текста внутри блока белый (#fff) -->
+    <div style="text-align:right; background:#2a2a2a; padding:1em; color: #fff;">
+        <div><img src="images/Chicken-1-.webp" width="45" alt="так прост"></div>
+        © Bussines.ru <br>2010-2014
+    </div>
+</footer>
+
+
+</body>
+</html>
